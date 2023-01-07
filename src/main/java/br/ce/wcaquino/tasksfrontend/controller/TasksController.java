@@ -18,13 +18,13 @@ import br.ce.wcaquino.tasksfrontend.model.Todo;
 public class TasksController {
 	
 	@Value("${backend.host}")
-	private String BACKEND_HOST;
+	private static String BACKEND_HOST;
 
 	@Value("${backend.port}")
-	private String BACKEND_PORT;
+	private static String BACKEND_PORT;
 	
 	@Value("${app.version}")
-	private String VERSION;
+	private static String VERSION;
 	
 	public String getBackendURL() {
 		return "http://" + BACKEND_HOST + ":" + BACKEND_PORT;
