@@ -52,6 +52,7 @@ public class TasksController {
 					getBackendURL() + "/tasks-backend/todo", todo, Object.class);			
 			model.addAttribute("sucess", "Success!");
 			return "index";
+			
 		} catch(Exception e) {
 			Pattern compile = Pattern.compile("message\":\"(.*)\",");
 			Matcher m = compile.matcher(e.getMessage());
